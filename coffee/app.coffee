@@ -5,8 +5,8 @@ class Board
   marks: []
   constructor: () ->
     squarePosition = 0
-    for y in [0..3]
-      for x in [0..3]
+    for y in [0..@board_side]
+      for x in [0..@board_side]
         @squares[@index(x, y)] = 
           x: x * @square_side
           y: y * @square_side
@@ -89,9 +89,6 @@ class Game
     if square
       @changePlayer() if @drawAndStore(square)
     return
-
-  
-
 
   changePlayer: ->
     if @currentPlayer == 1

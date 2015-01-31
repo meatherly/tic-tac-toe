@@ -1,12 +1,9 @@
 # tic-tac-toe
 
-## Play
 
-Open index.html in a browser
+## Develop/Play
 
-## Develop
-
-1. Install coffeescript `npm install -g coffee-script`
-2. Run coffeescript `coffee -w -c *.coffee`
-3. Edit app.coffee and save
-4. Refresh broswer to see changes
+1. Install dependencies. `npm install`
+2. Run `gulp`
+3. Edit coffee/app.coffee and save. Browser will refresh automatically.
+4. Visit `http://localhost:3000`
