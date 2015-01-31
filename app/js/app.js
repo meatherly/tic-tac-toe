@@ -12,10 +12,10 @@ Board = (function() {
 
   function Board() {
     this.index = __bind(this.index, this);
-    var i, squarePosition, x, y, _i, _j, _k;
+    var i, squarePosition, x, y, _i, _j, _k, _ref, _ref1;
     squarePosition = 0;
-    for (y = _i = 0; _i <= 3; y = ++_i) {
-      for (x = _j = 0; _j <= 3; x = ++_j) {
+    for (y = _i = 0, _ref = this.board_side; 0 <= _ref ? _i <= _ref : _i >= _ref; y = 0 <= _ref ? ++_i : --_i) {
+      for (x = _j = 0, _ref1 = this.board_side; 0 <= _ref1 ? _j <= _ref1 : _j >= _ref1; x = 0 <= _ref1 ? ++_j : --_j) {
         this.squares[this.index(x, y)] = {
           x: x * this.square_side,
           y: y * this.square_side,
